@@ -1,0 +1,318 @@
+.container {
+  padding: 0 2rem;
+}
+
+.main {
+  min-height: 90vh;
+  /* padding: 4rem 0; */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.title a {
+  color: #f213a4;
+  text-decoration: none;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.connect {
+  margin-bottom: 2rem;
+  width: 230px;
+}
+
+.description {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.code {
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+
+.card {
+  background-color: #1b2129;
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 350px;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  background-color: #272c34;
+  color: #0ea5e9;
+  border-color: #0ea5e9;
+}
+
+.card h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.userTag {
+  position: absolute;
+  top: 10vh;
+  left: 50%;
+  height:10vh;
+  transform: translateX(-50%);
+  margin: 0 0 1rem 0;
+  font-size: 3rem;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.5), 0 0 40px rgba(255, 140, 0, 0.5), 
+  0 0 70px rgba(255, 140, 0, 0.5), 0 0 80px rgba(255, 140, 0, 0.5), 0 0 100px rgba(255, 140, 0, 0.5), 0 0 150px rgba(255, 140, 0, 0.5);
+  text-align:center;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.logo {
+  height: 1em;
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+.card,
+.footer {
+  border-color: #222;
+}
+.code {
+  background: #111;
+}
+.logo img {
+  filter: invert(1);
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh; /* set the height of the container to the full viewport height */
+}
+
+.btn button {
+  background-image: linear-gradient(to bottom right, #ff9d00, #f9bb00);
+  margin: 10px;
+  border: none;
+  border-radius: 100px;
+  width: 200px;
+  height: 80px;
+  font-size: 36px;
+  color: #fff;
+  cursor: pointer;
+  position: relative; /* set the button to be a positioned element */
+  overflow: hidden; /* hide the excess shadow */
+}
+
+.btn button:first-child {
+  margin-right: 10px;
+}
+
+.btn button:last-child {
+  margin-left: 10px;
+}
+
+.btn button:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  color: lightgray;
+  background-color: rgba(255, 0, 0, 0.294); /* set the background color and alpha value */
+  border-radius: 50%;
+  filter: blur(120px); /* add a large blur effect */
+  opacity: 0; /* set the opacity to 0 initially */
+  transition: opacity 0.3s ease-in-out; /* add a transition effect */
+}
+
+.btn button:hover::after {
+  opacity: 1; /* set the opacity to 1 on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.btn-mini {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 13vh; /* set the height of the container to the full viewport height */
+}
+
+.btn-mini div {
+  height: 10vh; /* set the height of the container to the full viewport height */
+}
+
+.btn-mini button {
+  background-image: linear-gradient(to bottom right, #ff9d00, #f9bb00);
+  margin: 5px;
+  border: none;
+  border-radius: 100px;
+  width: 150px;
+  height: 50px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  position: relative; /* set the button to be a positioned element */
+  overflow: hidden; /* hide the excess shadow */
+}
+
+.btn-mini button:first-child {
+  margin-right: 7.5px;
+}
+
+.btn-mini button:last-child {
+  margin-left: 7.5px;
+}
+
+.btn-mini button:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  color: lightgray;
+  background-color: rgba(255, 0, 0, 0.294); /* set the background color and alpha value */
+  border-radius: 50%;
+  filter: blur(90px); /* add a large blur effect */
+  opacity: 0; /* set the opacity to 0 initially */
+  transition: opacity 0.3s ease-in-out; /* add a transition effect */
+  overflow: hidden;
+}
+
+.btn-mini button:hover::after {
+  opacity: 1; /* set the opacity to 1 on hover */
+}
+
+.total {
+  padding: 10px;
+}
+
+.TableElem {
+  margin-left: 100px;
+  margin-right: 100px;
+  width: 8vw;
+  padding-left: 10vw;
+  padding-right: 12vw;
+  text-align: left;
+  
+}
+
+
+#myTable {
+  border: 1px solid white;
+  white-space: pre-line;
+  align-self: center;
+  text-align: left;
+  
+}
+
+#top-div div {
+  height:60px;
+  /* min-width: max-content; */
+  /* align-self:center; */
+  /* margin-bottom:auto; */
+}
+
+#middle-div {
+  margin-top: 20px;
+  overflow: scroll;
+  /* top: 50vh;  */
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  
+}
+
+#middle-div div {
+  
+  /* height: 350px; */
+  /* display:flex; */
+  margin-top: 5vh;
+}
+
+#price-div {
+  height: 21.5px;
+}
+#form {
+  overflow: visible;
+  white-space: nowrap;
+  /* width: 800px; */
+}
+
+/* #form {
+  display: flex;
+  fle
+} */
+
+
+
+#payment div {
+  height: 100px;
+  top: 90vh;
+  /* align-self: top; */
+  margin-top: 0;
+  margin-bottom: 0;
+}
