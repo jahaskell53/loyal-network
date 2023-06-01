@@ -5,4 +5,4 @@ Our project, Loyal Network, is a loyalty rewards program and point of sale softw
 
 ## [Whitepaper](https://kobisbeef.com/loyalnetwork.pdf)
 
-This project was created by Nishant Bakrhu, Jakobi Haskell, and Brian Delgado.
+This project was created by Nishant Bakhru, Jakobi Haskell, and Brian Delgado.
